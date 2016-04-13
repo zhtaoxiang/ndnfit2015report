@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  12 APR 2016 19:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 APR 2016 01:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -314,26 +314,43 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- <./dataflow.png> <./hourglass.png>] (./open mhealth annual report.bbl [2]) [3]
+ <./dataflow.png> <./hourglass.png>] <namespace3.pdf, id=14, 1735.48375pt x 787
+.94376pt>
+File: namespace3.pdf Graphic file (type pdf)
 
-(./open mhealth annual report.aux) ) 
+<use namespace3.pdf>
+Package pdftex.def Info: namespace3.pdf used on input line 66.
+(pdftex.def)             Requested size: 469.75502pt x 213.27667pt.
+ <NDNFit.png, id=15, 193.2018pt x 344.0052pt>
+File: NDNFit.png Graphic file (type png)
+
+<use NDNFit.png>
+Package pdftex.def Info: NDNFit.png used on input line 74.
+(pdftex.def)             Requested size: 93.94957pt x 167.28323pt.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 80
+.
+
+[2 <./NDNFit.png>] [3 <./namespace3.pdf>] (./open mhealth annual report.bbl)
+[4] (./open mhealth annual report.aux) ) 
 Here is how much of TeX's memory you used:
- 4066 strings out of 493089
- 62828 string characters out of 6134842
- 143946 words of memory out of 5000000
- 7498 multiletter control sequences out of 15000+600000
+ 4078 strings out of 493089
+ 63013 string characters out of 6134842
+ 144962 words of memory out of 5000000
+ 7508 multiletter control sequences out of 15000+600000
  5196 words of font info for 19 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,5n,46p,880b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti10.pfb>
-Output written on "open mhealth annual report.pdf" (3 pages, 683312 bytes).
+ 47i,5n,46p,886b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti10.pfb>
+Output written on "open mhealth annual report.pdf" (4 pages, 758087 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
