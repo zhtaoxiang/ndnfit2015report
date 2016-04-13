@@ -93,7 +93,15 @@ There are three problems need to be solved when design the  data transportation 
 To solve the first problem, a mobile device needs to send signal Interest to a DSU whenever it reconnects the Internet, then the DSU can start to fetch data from the mobile device.  One level of direction - catalog - used by DSUs to learn the names of captured data from mobile devices is introduced to solve the second problem. A mobile device packages captured data names into a catalog every 10 minutes, which is to say, a catalog contains the names of data captured in the past 10 minutes; and catalogs are named with some deterministic timestamp as the last component. To confirm that a DSU have fetched all the data whose names are packaged in the same catalog, a mobile device sends a confirmation request Interest right after it sends out the catalog. After the DSU gets all the data, it will send confirmation Data back to the mobile device. 
 
 \subsection{NFN integration mechanism}
+NDNFit uses NFN (Named Function Networking) to work as the DPU. But the data formats of NDN and NFN are not fully compatible, so a service is needed to do packets rewriting/translating while keeping NDN’s trust relationship and access control. To achieve this goal, we design a mechanism to derive NFN interest from NDN interest properly, and use packet encapsulation to convert NDN interest to NFN interest. Figure \ref{fig:ndnnfn} shows a concrete translation example.
 
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{ndnnfn.png}
+		\caption{Use packet encapsulation to convert NDN packets to NFN packets}
+		\label{fig:ndnnfn}
+	\end{center}
+\end{figure}
 
 \subsection{Name-based access control (NAC)}
 This will be covered by other section?
