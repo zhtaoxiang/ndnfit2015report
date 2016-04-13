@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{estrin2010open}
+Deborah Estrin and Ida Sim.
+\newblock Open mhealth architecture: an engine for health care innovation.
+\newblock {\em Science}, 330(6005):759--760, 2010.
+
+\bibitem{tschudinnamed}
+Christian Tschudin and Manolis Sifalakis.
+\newblock Named function networking.
+
+\bibitem{yu2015name}
+Yingdi Yu, Alexander Afanasyev, and Lixia Zhang.
+\newblock Name-based access control.
+\newblock {\em Named Data Networking Project, Technical Report NDN-0034}, 2015.
+
+\end{thebibliography}

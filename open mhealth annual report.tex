@@ -1,0 +1,89 @@
+\documentclass{article}
+%\documentclass[10pt,onecolumn]{IEEEtran}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{scrextend}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{wrapfig}
+\usepackage[pdftex]{graphicx}
+\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage{todo}
+\usepackage{url}
+\usepackage{listing}
+
+\begin{document}
+
+\section{Open mHealth}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{hourglass.png}
+		\caption{The Open mHealth architecture uses a data-centric hourglass model, where the interoperability layer (``thin waist'') is based on standardized data exchange.~\cite{estrin2010open}}
+		\label{fig:hourglass}
+	\end{center}
+\end{wrapfigure}
+
+Mobile health (mHealth) has emerged as an important market and a key area of Health IT, a national priority. Open mHealth project \cite{estrin2010open} led by Deborah Estrin (Cornell) and Ida Sim (UC San Francisco) proposes a thin waist of open data interchange standards (Figure \ref{fig:hourglass}) to enable an ecosystem of sensing, storage, analysis, and user interface components to support medical discovery and evidence-based care. Specifically, the Open mHealth architecture is proposed have standardized personal data vaults and health specific data exchange as the narrow waist, which provides health-specific syntactic and semantic data standards, patient identity standards, core data processing functions such as feature extraction and analytics and data stores that allow for selective, patient-controlled sharing. 
+
+The focus on data exchange as the backbone of the application ecosystem makes Open mHealth an excellent network environment to both drive and evaluate NDN. Since NDN takes data exchanging as the narrow waist of network architecture, provides a standard way to get identity and manage trust relationship, provides provenance via the signature, and secures data at generation, data owners (different from data producers) directly controls data sharing.
+
+Our high level though is to build a pilot NDN-based fitness appication and system, which is compatible with Open mHealth paradigm, to capture, process and visualize users' time-location data. Figure \ref{fig:dataflow} shows the data flow for a single user who uses NDNFit to get: 1) fitness/activity metrics,  2) walking or running path visualizations, and  3) location-based content during exercise - all through the same ecosystem, but from different providers. 
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{dataflow.png}
+		\caption{data flow for a single user of NDNfit}
+		\label{fig:dataflow}
+	\end{center}
+\end{figure}
+
+Nine sites are collaborating on design and development of this application:
+\begin{itemize}
+	\item UCLA REMAP - application design; library support; web-based visualization; values in design.
+	\item UCLA IRL - architecture implications; repository; library and forwarder support; trust and security
+	\item University of Arizona - forwarder support.
+	\item University of Michigan - trust and security.
+	\item Tsinghua University - repository.
+	\item University of Basel - data flow processing using NFN (Named Function Networking).
+	\item Anyang - Ohmage capture application port.
+	\item WUSTL - testbed support.
+	\item UCSD - project management support.
+\end{itemize}
+
+Last year, we developed an overall application architecture (DO YOU HAVE THE FIGURE LISTED ON PAGE 12 OF LAST YEAR'S REPORT?), including a trust model and encryption-based access control design, an approach to publisher mobility support, and an initial direction for distributed computation based on the University of Basel's Named Function Networking research \cite{tschudinnamed}. We also began to define autoconfiguration support, the NDN equivalent of DHCP needed for data publishers.
+
+This year, we revised the namespace design, implement the NDNFit Android mobile application, designed and implemented the identity management Android application, designed and implemented data transportation protocols, designed and implemented NFN integration mechanism, and implemented name-based access control (NAC) \cite{yu2015name}. We also started to revise the previous autoconfiguration support mechanism. The most exiting part is that we have built a demo system running on the testbed which has a single user, a single DSU and two DPUs (one NFN DPU and one native NDN DPU).
+
+\subsection{Namespace}
+
+\subsection{NDNFit Android Application}
+
+\subsection{Identity manager}
+
+\subsection{Data transportation protocol}
+
+\subsection{NFN integration mechanism}
+
+\subsection{Name-based access control (NAC)}
+This will be covered by other section?
+
+\subsection{Progress towards milestones}
+We summarize progress toward our proposed milestones for this specific environment:
+\begin{itemize}
+	\item \textit{Review limitations in current IP-based architecture for Open mHealth needs. (Y1)} Done. Included conversations with Open mHealth architects and developers, code review and porting of existing ap- plications, and literature review. 
+	\item \textit{Design namespace, repository, trust and communication model for use cases, e.g., diabetes or PTSD treatment (Y1; updated in Y2)} Updated the initial design.
+	\item \textit {Repository implementation providing backing storage for prototype applications. (Y1)} Done.
+	\item \textit {Integrate named data networking into the Ohmage mobile data collection framework. (Y2)} Done.
+	\item \textit {Pilot user-facing application using NDN, for testing by Open mHealth team. (Y2)} Built an initial demo system.
+\end{itemize}
+
+
+\bibliographystyle{plain}
+\bibliography{reference.bib}
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
